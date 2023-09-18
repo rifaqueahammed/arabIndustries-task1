@@ -54,6 +54,7 @@ function Dashbord() {
       <div className="dashboard-section1">
         {plans.map((item, key) => (
           <div className="card1" key={key}>
+            <div>
             <h3>{item.name}</h3>
             <p className="strikeP">$ {item.rate}/mo</p>
             <h3>$ {item.offerRate}/mo</h3>
@@ -66,7 +67,9 @@ function Dashbord() {
             >
               Get Started <i class="fa-solid fa-arrow-right"></i>
             </button>
+            </div>
             <hr />
+            <div>
             <p>What you will get</p>
             <div className="plan-feutures-main">
               <div className="plan-feutures">
@@ -81,6 +84,7 @@ function Dashbord() {
                 <i className="fa-solid fa-envelope"></i>
                 <p>Email Support</p>
               </div>
+            </div>
             </div>
           </div>
         ))}
